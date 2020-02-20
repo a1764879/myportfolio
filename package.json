@@ -4,17 +4,22 @@
   "description": "portfolio app",
   "main": "app.js",
   "scripts": {
-    "format": "prettier \"scr/**/*.{js,html}\"",
+    "dev": "parcel src/index.html",
+    "format": "prettier \"scr/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,html}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alan Pallath",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1"
   }
 }
